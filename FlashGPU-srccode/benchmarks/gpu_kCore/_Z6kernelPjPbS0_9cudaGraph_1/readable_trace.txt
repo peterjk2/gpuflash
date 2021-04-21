@@ -1,0 +1,73 @@
+0x1f40	ld.param.u64 %r0, [_Z6kernelPjPbS0_9cudaGraph_param_0]
+0x1f48	ld.param.u64 %r1, [_Z6kernelPjPbS0_9cudaGraph_param_1 + 8]
+0x1f50	ld.param.u64 %r2, [_Z6kernelPjPbS0_9cudaGraph_param_2 + 16]
+0x1f58	cvta.to.global.u64 %r3, %r2
+0x1f60	cvta.to.global.u64 %r4, %r0
+0x1f68	cvta.to.global.u64 %r5, %r1
+0x1f70	ld.param.u64 %r6, [_Z6kernelPjPbS0_9cudaGraph_param_3 + 40]
+0x1f78	ld.param.u64 %r7, [_Z6kernelPjPbS0_9cudaGraph_param_3 + 32]
+0x1f80	ld.param.u64 %r8, [_Z6kernelPjPbS0_9cudaGraph_param_3 + 24]
+0x1f88	cvta.to.global.u64 %r9, %r8
+0x1f90	cvta.to.global.u64 %r10, %r7
+0x1f98	mov.u32 %r11, %ntid.x
+0x1fa0	mov.u32 %r12, %ctaid.x
+0x1fa8	mov.u32 %r13, %tid.x
+0x1fb0	mad.lo.s32 %r14, %r11, %r12, %r13
+0x1fb8	cvt.u64.u32 %r15, %r14
+0x1fc0	setp.ge.u64 %p16, %r15, %r6
+0x1fc8	@%p16 bra BB_2_10
+0x1fd0	add.s64 %r17, %r3, %r15
+0x1fd8	ld.global.u8 %r18, [%r17]
+0x1fe0	cvt.s16.s8 %r19, %r18
+0x1fe8	mov.b16 %r20, 0
+0x1ff0	cvt.s16.s8 %r20, %r20
+0x1ff8	setp.eq.s16 %p21, %r19, %r20
+0x2000	@%p21 bra BB_2_10
+0x2008	shl.b64 %r22, %r15, 3
+0x2010	add.s64 %r23, %r9, %r22
+0x2018	ld.global.u64 %r24, [%r23 + 8]
+0x2020	ld.global.u64 %r25, [%r23]
+0x2028	setp.ge.u64 %p26, %r25, %r24
+0x2030	@%p26 bra BB_2_9
+0x2038	shl.b64 %r27, %r25, 3
+0x2040	add.s64 %r28, %r10, %r27
+0x2048	ld.global.u64 %r29, [%r28]
+0x2050	add.s64 %r30, %r5, %r29
+0x2058	ld.global.u8 %r31, [%r30]
+0x2060	cvt.s16.s8 %r19, %r31
+0x2068	mov.b16 %r20, 0
+0x2070	cvt.s16.s8 %r20, %r20
+0x2078	setp.ne.s16 %p32, %r19, %r20
+0x2080	@%p32 bra BB_2_8
+0x2088	shl.b64 %r33, %r29, 2
+0x2090	add.s64 %r34, %r4, %r33
+0x2098	atom.global.add.u32 %r35, [%r34], -1
+0x20a0	reconverge
+0x20a8	add.s64 %r25, %r25, 1
+0x20b0	add.s64 %r28, %r28, 8
+0x20b8	setp.lt.u64 %p36, %r25, %r24
+0x20c0	@%p36 bra BB_2_6
+0x20c8	reconverge
+0x2048	ld.global.u64 %r29, [%r28]
+0x2050	add.s64 %r30, %r5, %r29
+0x2058	ld.global.u8 %r31, [%r30]
+0x2060	cvt.s16.s8 %r19, %r31
+0x2068	mov.b16 %r20, 0
+0x2070	cvt.s16.s8 %r20, %r20
+0x2078	setp.ne.s16 %p32, %r19, %r20
+0x2080	@%p32 bra BB_2_8
+0x2088	shl.b64 %r33, %r29, 2
+0x2090	add.s64 %r34, %r4, %r33
+0x2098	atom.global.add.u32 %r35, [%r34], -1
+0x20a0	reconverge
+0x20a8	add.s64 %r25, %r25, 1
+0x20b0	add.s64 %r28, %r28, 8
+0x20b8	setp.lt.u64 %p36, %r25, %r24
+0x20c0	@%p36 bra BB_2_6
+0x20c8	reconverge
+0x20c8	reconverge
+0x20d0	mov.u16 %r37, 0
+0x20d8	st.global.u8 [%r17], %r37
+0x20e0	reconverge
+0x20e0	reconverge
+0x20e8	exit

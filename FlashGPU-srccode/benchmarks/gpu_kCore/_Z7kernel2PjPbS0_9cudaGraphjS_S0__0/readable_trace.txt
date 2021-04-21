@@ -1,0 +1,42 @@
+0x1f40	ld.param.u64 %r0, [_Z7kernel2PjPbS0_9cudaGraphjS_S0__param_0]
+0x1f48	ld.param.u64 %r1, [_Z7kernel2PjPbS0_9cudaGraphjS_S0__param_1 + 8]
+0x1f50	ld.param.u64 %r2, [_Z7kernel2PjPbS0_9cudaGraphjS_S0__param_2 + 16]
+0x1f58	ld.param.u64 %r3, [_Z7kernel2PjPbS0_9cudaGraphjS_S0__param_5 + 64]
+0x1f60	ld.param.u64 %r4, [_Z7kernel2PjPbS0_9cudaGraphjS_S0__param_6 + 72]
+0x1f68	cvta.to.global.u64 %r5, %r4
+0x1f70	cvta.to.global.u64 %r6, %r3
+0x1f78	cvta.to.global.u64 %r7, %r2
+0x1f80	cvta.to.global.u64 %r8, %r1
+0x1f88	cvta.to.global.u64 %r9, %r0
+0x1f90	mov.u32 %r10, %ntid.x
+0x1f98	mov.u32 %r11, %ctaid.x
+0x1fa0	mov.u32 %r12, %tid.x
+0x1fa8	mad.lo.s32 %r13, %r10, %r11, %r12
+0x1fb0	cvt.u64.u32 %r14, %r13
+0x1fb8	ld.param.u64 %r15, [_Z7kernel2PjPbS0_9cudaGraphjS_S0__param_3 + 40]
+0x1fc0	setp.ge.u64 %p16, %r14, %r15
+0x1fc8	@%p16 bra BB_3_8
+0x1fd0	add.s64 %r17, %r8, %r14
+0x1fd8	ld.global.u8 %r18, [%r17]
+0x1fe0	cvt.s16.s8 %r19, %r18
+0x1fe8	mov.b16 %r20, 0
+0x1ff0	cvt.s16.s8 %r20, %r20
+0x1ff8	setp.ne.s16 %p21, %r19, %r20
+0x2000	@%p21 bra BB_3_8
+0x2008	shl.b64 %r22, %r14, 2
+0x2010	add.s64 %r23, %r9, %r22
+0x2018	ld.global.u32 %r24, [%r23]
+0x2020	ld.param.u32 %r25, [_Z7kernel2PjPbS0_9cudaGraphjS_S0__param_4 + 56]
+0x2028	setp.lt.u32 %p26, %r24, %r25
+0x2030	@%p26 bra BB_3_6
+0x2038	reconverge
+0x2048	mov.u16 %r27, 1
+0x2050	st.global.u8 [%r17], %r27
+0x2058	add.s64 %r28, %r7, %r14
+0x2060	st.global.u8 [%r28], %r27
+0x2068	atom.global.add.u32 %r29, [%r6], 1
+0x2070	mov.u16 %r30, 0
+0x2078	st.global.u8 [%r5], %r30
+0x2080	bra.uni BB_3_8
+0x2038	reconverge
+0x2040	exit

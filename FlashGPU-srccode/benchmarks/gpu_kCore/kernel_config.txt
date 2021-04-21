@@ -1,0 +1,8 @@
+newptx
+14
+-1
+/home/pj/Desktop/macsim/benchmarks/gpu_kCore/_Z10initializePjPbS0_9cudaGraph_0/Trace.txt
+/home/pj/Desktop/macsim/benchmarks/gpu_kCore/_Z6kernelPjPbS0_9cudaGraph_0/Trace.txt
+/home/pj/Desktop/macsim/benchmarks/gpu_kCore/_Z7kernel2PjPbS0_9cudaGraphjS_S0__0/Trace.txt
+/home/pj/Desktop/macsim/benchmarks/gpu_kCore/_Z6kernelPjPbS0_9cudaGraph_1/Trace.txt
+/home/pj/Desktop/macsim/benchmarks/gpu_kCore/_Z7kernel2PjPbS0_9cudaGraphjS_S0__1/Trace.txt

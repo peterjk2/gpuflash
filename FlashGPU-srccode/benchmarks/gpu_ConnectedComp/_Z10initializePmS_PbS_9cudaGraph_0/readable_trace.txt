@@ -1,0 +1,922 @@
+0x1f40	ld.param.u64 %r0, [_Z10initializePmS_PbS_9cudaGraph_param_0]
+0x1f48	ld.param.u64 %r1, [_Z10initializePmS_PbS_9cudaGraph_param_1 + 8]
+0x1f50	ld.param.u64 %r2, [_Z10initializePmS_PbS_9cudaGraph_param_2 + 16]
+0x1f58	ld.param.u64 %r3, [_Z10initializePmS_PbS_9cudaGraph_param_3 + 24]
+0x1f60	cvta.to.global.u64 %r4, %r3
+0x1f68	cvta.to.global.u64 %r5, %r2
+0x1f70	cvta.to.global.u64 %r6, %r1
+0x1f78	cvta.to.global.u64 %r7, %r0
+0x1f80	ld.param.u64 %r8, [_Z10initializePmS_PbS_9cudaGraph_param_4 + 48]
+0x1f88	ld.param.u64 %r9, [_Z10initializePmS_PbS_9cudaGraph_param_4 + 32]
+0x1f90	cvta.to.global.u64 %r10, %r9
+0x1f98	mov.u32 %r11, %ntid.x
+0x1fa0	mov.u32 %r12, %ctaid.x
+0x1fa8	mov.u32 %r13, %tid.x
+0x1fb0	mad.lo.s32 %r14, %r11, %r12, %r13
+0x1fb8	cvt.u64.u32 %r15, %r14
+0x1fc0	setp.ge.u64 %p16, %r15, %r8
+0x1fc8	@%p16 bra BB_1_6
+0x1fd0	shl.b64 %r17, %r15, 3
+0x1fd8	add.s64 %r18, %r7, %r17
+0x1fe0	st.global.u64 [%r18], %r15
+0x1fe8	add.s64 %r19, %r6, %r17
+0x1ff0	st.global.u64 [%r19], %r15
+0x1ff8	add.s64 %r20, %r10, %r17
+0x2000	ld.global.u64 %r21, [%r20 + 8]
+0x2008	ld.global.u64 %r22, [%r20]
+0x2010	setp.ge.u64 %p23, %r22, %r21
+0x2018	@%p23 bra BB_1_6
+0x2020	shl.b64 %r24, %r22, 3
+0x2028	add.s64 %r25, %r4, %r24
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2030	add.s64 %r26, %r5, %r22
+0x2038	mov.u16 %r27, 0
+0x2040	st.global.u8 [%r26], %r27
+0x2048	st.global.u64 [%r25], %r15
+0x2050	add.s64 %r25, %r25, 8
+0x2058	add.s64 %r22, %r22, 1
+0x2060	setp.lt.u64 %p28, %r22, %r21
+0x2068	@%p28 bra BB_1_5
+0x2070	reconverge
+0x2070	reconverge
+0x2078	exit

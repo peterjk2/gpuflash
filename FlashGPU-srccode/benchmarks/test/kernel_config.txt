@@ -1,0 +1,4 @@
+newptx
+14
+-1
+/home/pj/Desktop/macsim/benchmarks/test/traces/Trace.txt

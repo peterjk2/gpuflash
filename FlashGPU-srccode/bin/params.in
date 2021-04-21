@@ -11,8 +11,7 @@ num_sim_medium_cores 0
 num_sim_large_cores 0
 
 # SimpleSSD Configuration
-simplessd_config /the/path/to/your/ssd/configuration
-#exmaple ../src/simplessd/config/readprefetch.cfg
+simplessd_config ../src/simplessd/config/readprefetch.cfg
 
 # Clock
 # from device query for gtx580 on damint - gpu clock - 1.66 GHz, mem clock - 2100 MHz

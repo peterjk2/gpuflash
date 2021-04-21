@@ -1,0 +1,1015 @@
+0x1f40	ld.param.u64 %r0, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_0]
+0x1f48	ld.param.u64 %r1, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_1 + 8]
+0x1f50	ld.param.u64 %r2, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_2 + 16]
+0x1f58	ld.param.u64 %r3, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_4 + 32]
+0x1f60	cvta.to.global.u64 %r4, %r2
+0x1f68	cvta.to.global.u64 %r5, %r3
+0x1f70	cvta.to.global.u64 %r6, %r1
+0x1f78	cvta.to.global.u64 %r7, %r0
+0x1f80	ld.param.u64 %r8, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1f88	mov.u32 %r9, %ntid.x
+0x1f90	mov.u32 %r10, %ctaid.x
+0x1f98	mov.u32 %r11, %tid.x
+0x1fa0	mad.lo.s32 %r12, %r9, %r10, %r11
+0x1fa8	mul.wide.u32 %r13, %r12, 2
+0x1fb0	setp.ge.u64 %p14, %r13, %r8
+0x1fb8	@%p14 bra BB_2_13
+0x1fc0	add.s64 %r15, %r13, 2
+0x1fc8	ld.param.u64 %r16, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1fd0	min.u64 %r17, %r16, %r15
+0x1fd8	setp.ge.u64 %p18, %r13, %r17
+0x1fe0	@%p18 bra BB_2_13
+0x1fe8	ld.param.u32 %r19, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_5 + 40]
+0x1ff0	and.b32 %r20, %r19, 1
+0x1ff8	setp.eq.s32 %p21, %r20, 0
+0x2000	mul.wide.u32 %r22, %r12, 16
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2168	reconverge
+0x2170	exit
+0x1f40	ld.param.u64 %r0, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_0]
+0x1f48	ld.param.u64 %r1, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_1 + 8]
+0x1f50	ld.param.u64 %r2, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_2 + 16]
+0x1f58	ld.param.u64 %r3, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_4 + 32]
+0x1f60	cvta.to.global.u64 %r4, %r2
+0x1f68	cvta.to.global.u64 %r5, %r3
+0x1f70	cvta.to.global.u64 %r6, %r1
+0x1f78	cvta.to.global.u64 %r7, %r0
+0x1f80	ld.param.u64 %r8, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1f88	mov.u32 %r9, %ntid.x
+0x1f90	mov.u32 %r10, %ctaid.x
+0x1f98	mov.u32 %r11, %tid.x
+0x1fa0	mad.lo.s32 %r12, %r9, %r10, %r11
+0x1fa8	mul.wide.u32 %r13, %r12, 2
+0x1fb0	setp.ge.u64 %p14, %r13, %r8
+0x1fb8	@%p14 bra BB_2_13
+0x1fc0	add.s64 %r15, %r13, 2
+0x1fc8	ld.param.u64 %r16, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1fd0	min.u64 %r17, %r16, %r15
+0x1fd8	setp.ge.u64 %p18, %r13, %r17
+0x1fe0	@%p18 bra BB_2_13
+0x1fe8	ld.param.u32 %r19, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_5 + 40]
+0x1ff0	and.b32 %r20, %r19, 1
+0x1ff8	setp.eq.s32 %p21, %r20, 0
+0x2000	mul.wide.u32 %r22, %r12, 16
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2168	reconverge
+0x2170	exit
+0x1f40	ld.param.u64 %r0, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_0]
+0x1f48	ld.param.u64 %r1, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_1 + 8]
+0x1f50	ld.param.u64 %r2, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_2 + 16]
+0x1f58	ld.param.u64 %r3, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_4 + 32]
+0x1f60	cvta.to.global.u64 %r4, %r2
+0x1f68	cvta.to.global.u64 %r5, %r3
+0x1f70	cvta.to.global.u64 %r6, %r1
+0x1f78	cvta.to.global.u64 %r7, %r0
+0x1f80	ld.param.u64 %r8, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1f88	mov.u32 %r9, %ntid.x
+0x1f90	mov.u32 %r10, %ctaid.x
+0x1f98	mov.u32 %r11, %tid.x
+0x1fa0	mad.lo.s32 %r12, %r9, %r10, %r11
+0x1fa8	mul.wide.u32 %r13, %r12, 2
+0x1fb0	setp.ge.u64 %p14, %r13, %r8
+0x1fb8	@%p14 bra BB_2_13
+0x1fc0	add.s64 %r15, %r13, 2
+0x1fc8	ld.param.u64 %r16, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1fd0	min.u64 %r17, %r16, %r15
+0x1fd8	setp.ge.u64 %p18, %r13, %r17
+0x1fe0	@%p18 bra BB_2_13
+0x1fe8	ld.param.u32 %r19, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_5 + 40]
+0x1ff0	and.b32 %r20, %r19, 1
+0x1ff8	setp.eq.s32 %p21, %r20, 0
+0x2000	mul.wide.u32 %r22, %r12, 16
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2040	ld.param.u64 %r28, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 56]
+0x2048	cvta.to.global.u64 %r29, %r28
+0x2050	ld.param.u64 %r30, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_3 + 24]
+0x2058	cvta.to.global.u64 %r31, %r30
+0x2060	add.s64 %r32, %r31, %r22
+0x2068	add.s64 %r33, %r29, %r22
+0x2070	ld.global.u64 %r34, [%r32]
+0x2078	shl.b64 %r35, %r34, 3
+0x2080	add.s64 %r36, %r7, %r35
+0x2088	ld.global.u64 %r37, [%r33]
+0x2090	shl.b64 %r38, %r37, 3
+0x2098	add.s64 %r39, %r7, %r38
+0x20a0	ld.global.u64 %r40, [%r39]
+0x20a8	ld.global.u64 %r41, [%r36]
+0x20b0	setp.eq.s64 %p42, %r41, %r40
+0x20b8	@%p42 bra BB_2_11
+0x20c0	min.u64 %r43, %r40, %r41
+0x20c8	max.u64 %r44, %r41, %r40
+0x20d0	@%p21 bra BB_2_9
+0x20f8	shl.b64 %r47, %r43, 3
+0x2100	add.s64 %r48, %r6, %r47
+0x2108	st.global.u64 [%r48], %r44
+0x2110	reconverge
+0x2118	mov.u16 %r49, 0
+0x2120	st.global.u8 [%r5], %r49
+0x2128	bra.uni BB_2_12
+0x2140	reconverge
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2168	reconverge
+0x2170	exit
+0x1f40	ld.param.u64 %r0, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_0]
+0x1f48	ld.param.u64 %r1, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_1 + 8]
+0x1f50	ld.param.u64 %r2, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_2 + 16]
+0x1f58	ld.param.u64 %r3, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_4 + 32]
+0x1f60	cvta.to.global.u64 %r4, %r2
+0x1f68	cvta.to.global.u64 %r5, %r3
+0x1f70	cvta.to.global.u64 %r6, %r1
+0x1f78	cvta.to.global.u64 %r7, %r0
+0x1f80	ld.param.u64 %r8, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1f88	mov.u32 %r9, %ntid.x
+0x1f90	mov.u32 %r10, %ctaid.x
+0x1f98	mov.u32 %r11, %tid.x
+0x1fa0	mad.lo.s32 %r12, %r9, %r10, %r11
+0x1fa8	mul.wide.u32 %r13, %r12, 2
+0x1fb0	setp.ge.u64 %p14, %r13, %r8
+0x1fb8	@%p14 bra BB_2_13
+0x1fc0	add.s64 %r15, %r13, 2
+0x1fc8	ld.param.u64 %r16, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1fd0	min.u64 %r17, %r16, %r15
+0x1fd8	setp.ge.u64 %p18, %r13, %r17
+0x1fe0	@%p18 bra BB_2_13
+0x1fe8	ld.param.u32 %r19, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_5 + 40]
+0x1ff0	and.b32 %r20, %r19, 1
+0x1ff8	setp.eq.s32 %p21, %r20, 0
+0x2000	mul.wide.u32 %r22, %r12, 16
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2168	reconverge
+0x2170	exit
+0x1f40	ld.param.u64 %r0, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_0]
+0x1f48	ld.param.u64 %r1, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_1 + 8]
+0x1f50	ld.param.u64 %r2, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_2 + 16]
+0x1f58	ld.param.u64 %r3, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_4 + 32]
+0x1f60	cvta.to.global.u64 %r4, %r2
+0x1f68	cvta.to.global.u64 %r5, %r3
+0x1f70	cvta.to.global.u64 %r6, %r1
+0x1f78	cvta.to.global.u64 %r7, %r0
+0x1f80	ld.param.u64 %r8, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1f88	mov.u32 %r9, %ntid.x
+0x1f90	mov.u32 %r10, %ctaid.x
+0x1f98	mov.u32 %r11, %tid.x
+0x1fa0	mad.lo.s32 %r12, %r9, %r10, %r11
+0x1fa8	mul.wide.u32 %r13, %r12, 2
+0x1fb0	setp.ge.u64 %p14, %r13, %r8
+0x1fb8	@%p14 bra BB_2_13
+0x1fc0	add.s64 %r15, %r13, 2
+0x1fc8	ld.param.u64 %r16, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1fd0	min.u64 %r17, %r16, %r15
+0x1fd8	setp.ge.u64 %p18, %r13, %r17
+0x1fe0	@%p18 bra BB_2_13
+0x1fe8	ld.param.u32 %r19, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_5 + 40]
+0x1ff0	and.b32 %r20, %r19, 1
+0x1ff8	setp.eq.s32 %p21, %r20, 0
+0x2000	mul.wide.u32 %r22, %r12, 16
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2168	reconverge
+0x2170	exit
+0x1f40	ld.param.u64 %r0, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_0]
+0x1f48	ld.param.u64 %r1, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_1 + 8]
+0x1f50	ld.param.u64 %r2, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_2 + 16]
+0x1f58	ld.param.u64 %r3, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_4 + 32]
+0x1f60	cvta.to.global.u64 %r4, %r2
+0x1f68	cvta.to.global.u64 %r5, %r3
+0x1f70	cvta.to.global.u64 %r6, %r1
+0x1f78	cvta.to.global.u64 %r7, %r0
+0x1f80	ld.param.u64 %r8, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1f88	mov.u32 %r9, %ntid.x
+0x1f90	mov.u32 %r10, %ctaid.x
+0x1f98	mov.u32 %r11, %tid.x
+0x1fa0	mad.lo.s32 %r12, %r9, %r10, %r11
+0x1fa8	mul.wide.u32 %r13, %r12, 2
+0x1fb0	setp.ge.u64 %p14, %r13, %r8
+0x1fb8	@%p14 bra BB_2_13
+0x1fc0	add.s64 %r15, %r13, 2
+0x1fc8	ld.param.u64 %r16, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1fd0	min.u64 %r17, %r16, %r15
+0x1fd8	setp.ge.u64 %p18, %r13, %r17
+0x1fe0	@%p18 bra BB_2_13
+0x1fe8	ld.param.u32 %r19, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_5 + 40]
+0x1ff0	and.b32 %r20, %r19, 1
+0x1ff8	setp.eq.s32 %p21, %r20, 0
+0x2000	mul.wide.u32 %r22, %r12, 16
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2168	reconverge
+0x2170	exit
+0x1f40	ld.param.u64 %r0, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_0]
+0x1f48	ld.param.u64 %r1, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_1 + 8]
+0x1f50	ld.param.u64 %r2, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_2 + 16]
+0x1f58	ld.param.u64 %r3, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_4 + 32]
+0x1f60	cvta.to.global.u64 %r4, %r2
+0x1f68	cvta.to.global.u64 %r5, %r3
+0x1f70	cvta.to.global.u64 %r6, %r1
+0x1f78	cvta.to.global.u64 %r7, %r0
+0x1f80	ld.param.u64 %r8, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1f88	mov.u32 %r9, %ntid.x
+0x1f90	mov.u32 %r10, %ctaid.x
+0x1f98	mov.u32 %r11, %tid.x
+0x1fa0	mad.lo.s32 %r12, %r9, %r10, %r11
+0x1fa8	mul.wide.u32 %r13, %r12, 2
+0x1fb0	setp.ge.u64 %p14, %r13, %r8
+0x1fb8	@%p14 bra BB_2_13
+0x1fc0	add.s64 %r15, %r13, 2
+0x1fc8	ld.param.u64 %r16, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1fd0	min.u64 %r17, %r16, %r15
+0x1fd8	setp.ge.u64 %p18, %r13, %r17
+0x1fe0	@%p18 bra BB_2_13
+0x1fe8	ld.param.u32 %r19, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_5 + 40]
+0x1ff0	and.b32 %r20, %r19, 1
+0x1ff8	setp.eq.s32 %p21, %r20, 0
+0x2000	mul.wide.u32 %r22, %r12, 16
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2168	reconverge
+0x2170	exit
+0x1f40	ld.param.u64 %r0, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_0]
+0x1f48	ld.param.u64 %r1, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_1 + 8]
+0x1f50	ld.param.u64 %r2, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_2 + 16]
+0x1f58	ld.param.u64 %r3, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_4 + 32]
+0x1f60	cvta.to.global.u64 %r4, %r2
+0x1f68	cvta.to.global.u64 %r5, %r3
+0x1f70	cvta.to.global.u64 %r6, %r1
+0x1f78	cvta.to.global.u64 %r7, %r0
+0x1f80	ld.param.u64 %r8, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1f88	mov.u32 %r9, %ntid.x
+0x1f90	mov.u32 %r10, %ctaid.x
+0x1f98	mov.u32 %r11, %tid.x
+0x1fa0	mad.lo.s32 %r12, %r9, %r10, %r11
+0x1fa8	mul.wide.u32 %r13, %r12, 2
+0x1fb0	setp.ge.u64 %p14, %r13, %r8
+0x1fb8	@%p14 bra BB_2_13
+0x1fc0	add.s64 %r15, %r13, 2
+0x1fc8	ld.param.u64 %r16, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1fd0	min.u64 %r17, %r16, %r15
+0x1fd8	setp.ge.u64 %p18, %r13, %r17
+0x1fe0	@%p18 bra BB_2_13
+0x1fe8	ld.param.u32 %r19, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_5 + 40]
+0x1ff0	and.b32 %r20, %r19, 1
+0x1ff8	setp.eq.s32 %p21, %r20, 0
+0x2000	mul.wide.u32 %r22, %r12, 16
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2168	reconverge
+0x2170	exit
+0x1f40	ld.param.u64 %r0, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_0]
+0x1f48	ld.param.u64 %r1, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_1 + 8]
+0x1f50	ld.param.u64 %r2, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_2 + 16]
+0x1f58	ld.param.u64 %r3, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_4 + 32]
+0x1f60	cvta.to.global.u64 %r4, %r2
+0x1f68	cvta.to.global.u64 %r5, %r3
+0x1f70	cvta.to.global.u64 %r6, %r1
+0x1f78	cvta.to.global.u64 %r7, %r0
+0x1f80	ld.param.u64 %r8, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1f88	mov.u32 %r9, %ntid.x
+0x1f90	mov.u32 %r10, %ctaid.x
+0x1f98	mov.u32 %r11, %tid.x
+0x1fa0	mad.lo.s32 %r12, %r9, %r10, %r11
+0x1fa8	mul.wide.u32 %r13, %r12, 2
+0x1fb0	setp.ge.u64 %p14, %r13, %r8
+0x1fb8	@%p14 bra BB_2_13
+0x1fc0	add.s64 %r15, %r13, 2
+0x1fc8	ld.param.u64 %r16, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1fd0	min.u64 %r17, %r16, %r15
+0x1fd8	setp.ge.u64 %p18, %r13, %r17
+0x1fe0	@%p18 bra BB_2_13
+0x1fe8	ld.param.u32 %r19, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_5 + 40]
+0x1ff0	and.b32 %r20, %r19, 1
+0x1ff8	setp.eq.s32 %p21, %r20, 0
+0x2000	mul.wide.u32 %r22, %r12, 16
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2040	ld.param.u64 %r28, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 56]
+0x2048	cvta.to.global.u64 %r29, %r28
+0x2050	ld.param.u64 %r30, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_3 + 24]
+0x2058	cvta.to.global.u64 %r31, %r30
+0x2060	add.s64 %r32, %r31, %r22
+0x2068	add.s64 %r33, %r29, %r22
+0x2070	ld.global.u64 %r34, [%r32]
+0x2078	shl.b64 %r35, %r34, 3
+0x2080	add.s64 %r36, %r7, %r35
+0x2088	ld.global.u64 %r37, [%r33]
+0x2090	shl.b64 %r38, %r37, 3
+0x2098	add.s64 %r39, %r7, %r38
+0x20a0	ld.global.u64 %r40, [%r39]
+0x20a8	ld.global.u64 %r41, [%r36]
+0x20b0	setp.eq.s64 %p42, %r41, %r40
+0x20b8	@%p42 bra BB_2_11
+0x20c0	min.u64 %r43, %r40, %r41
+0x20c8	max.u64 %r44, %r41, %r40
+0x20d0	@%p21 bra BB_2_9
+0x20f8	shl.b64 %r47, %r43, 3
+0x2100	add.s64 %r48, %r6, %r47
+0x2108	st.global.u64 [%r48], %r44
+0x2110	reconverge
+0x2118	mov.u16 %r49, 0
+0x2120	st.global.u8 [%r5], %r49
+0x2128	bra.uni BB_2_12
+0x2140	reconverge
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2168	reconverge
+0x2170	exit
+0x1f40	ld.param.u64 %r0, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_0]
+0x1f48	ld.param.u64 %r1, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_1 + 8]
+0x1f50	ld.param.u64 %r2, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_2 + 16]
+0x1f58	ld.param.u64 %r3, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_4 + 32]
+0x1f60	cvta.to.global.u64 %r4, %r2
+0x1f68	cvta.to.global.u64 %r5, %r3
+0x1f70	cvta.to.global.u64 %r6, %r1
+0x1f78	cvta.to.global.u64 %r7, %r0
+0x1f80	ld.param.u64 %r8, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1f88	mov.u32 %r9, %ntid.x
+0x1f90	mov.u32 %r10, %ctaid.x
+0x1f98	mov.u32 %r11, %tid.x
+0x1fa0	mad.lo.s32 %r12, %r9, %r10, %r11
+0x1fa8	mul.wide.u32 %r13, %r12, 2
+0x1fb0	setp.ge.u64 %p14, %r13, %r8
+0x1fb8	@%p14 bra BB_2_13
+0x1fc0	add.s64 %r15, %r13, 2
+0x1fc8	ld.param.u64 %r16, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1fd0	min.u64 %r17, %r16, %r15
+0x1fd8	setp.ge.u64 %p18, %r13, %r17
+0x1fe0	@%p18 bra BB_2_13
+0x1fe8	ld.param.u32 %r19, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_5 + 40]
+0x1ff0	and.b32 %r20, %r19, 1
+0x1ff8	setp.eq.s32 %p21, %r20, 0
+0x2000	mul.wide.u32 %r22, %r12, 16
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2168	reconverge
+0x2170	exit
+0x1f40	ld.param.u64 %r0, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_0]
+0x1f48	ld.param.u64 %r1, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_1 + 8]
+0x1f50	ld.param.u64 %r2, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_2 + 16]
+0x1f58	ld.param.u64 %r3, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_4 + 32]
+0x1f60	cvta.to.global.u64 %r4, %r2
+0x1f68	cvta.to.global.u64 %r5, %r3
+0x1f70	cvta.to.global.u64 %r6, %r1
+0x1f78	cvta.to.global.u64 %r7, %r0
+0x1f80	ld.param.u64 %r8, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1f88	mov.u32 %r9, %ntid.x
+0x1f90	mov.u32 %r10, %ctaid.x
+0x1f98	mov.u32 %r11, %tid.x
+0x1fa0	mad.lo.s32 %r12, %r9, %r10, %r11
+0x1fa8	mul.wide.u32 %r13, %r12, 2
+0x1fb0	setp.ge.u64 %p14, %r13, %r8
+0x1fb8	@%p14 bra BB_2_13
+0x1fc0	add.s64 %r15, %r13, 2
+0x1fc8	ld.param.u64 %r16, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1fd0	min.u64 %r17, %r16, %r15
+0x1fd8	setp.ge.u64 %p18, %r13, %r17
+0x1fe0	@%p18 bra BB_2_13
+0x1fe8	ld.param.u32 %r19, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_5 + 40]
+0x1ff0	and.b32 %r20, %r19, 1
+0x1ff8	setp.eq.s32 %p21, %r20, 0
+0x2000	mul.wide.u32 %r22, %r12, 16
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2040	ld.param.u64 %r28, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 56]
+0x2048	cvta.to.global.u64 %r29, %r28
+0x2050	ld.param.u64 %r30, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_3 + 24]
+0x2058	cvta.to.global.u64 %r31, %r30
+0x2060	add.s64 %r32, %r31, %r22
+0x2068	add.s64 %r33, %r29, %r22
+0x2070	ld.global.u64 %r34, [%r32]
+0x2078	shl.b64 %r35, %r34, 3
+0x2080	add.s64 %r36, %r7, %r35
+0x2088	ld.global.u64 %r37, [%r33]
+0x2090	shl.b64 %r38, %r37, 3
+0x2098	add.s64 %r39, %r7, %r38
+0x20a0	ld.global.u64 %r40, [%r39]
+0x20a8	ld.global.u64 %r41, [%r36]
+0x20b0	setp.eq.s64 %p42, %r41, %r40
+0x20b8	@%p42 bra BB_2_11
+0x20c0	min.u64 %r43, %r40, %r41
+0x20c8	max.u64 %r44, %r41, %r40
+0x20d0	@%p21 bra BB_2_9
+0x20f8	shl.b64 %r47, %r43, 3
+0x2100	add.s64 %r48, %r6, %r47
+0x2108	st.global.u64 [%r48], %r44
+0x2110	reconverge
+0x2118	mov.u16 %r49, 0
+0x2120	st.global.u8 [%r5], %r49
+0x2128	bra.uni BB_2_12
+0x2140	reconverge
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2168	reconverge
+0x2170	exit
+0x1f40	ld.param.u64 %r0, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_0]
+0x1f48	ld.param.u64 %r1, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_1 + 8]
+0x1f50	ld.param.u64 %r2, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_2 + 16]
+0x1f58	ld.param.u64 %r3, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_4 + 32]
+0x1f60	cvta.to.global.u64 %r4, %r2
+0x1f68	cvta.to.global.u64 %r5, %r3
+0x1f70	cvta.to.global.u64 %r6, %r1
+0x1f78	cvta.to.global.u64 %r7, %r0
+0x1f80	ld.param.u64 %r8, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1f88	mov.u32 %r9, %ntid.x
+0x1f90	mov.u32 %r10, %ctaid.x
+0x1f98	mov.u32 %r11, %tid.x
+0x1fa0	mad.lo.s32 %r12, %r9, %r10, %r11
+0x1fa8	mul.wide.u32 %r13, %r12, 2
+0x1fb0	setp.ge.u64 %p14, %r13, %r8
+0x1fb8	@%p14 bra BB_2_13
+0x1fc0	add.s64 %r15, %r13, 2
+0x1fc8	ld.param.u64 %r16, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1fd0	min.u64 %r17, %r16, %r15
+0x1fd8	setp.ge.u64 %p18, %r13, %r17
+0x1fe0	@%p18 bra BB_2_13
+0x1fe8	ld.param.u32 %r19, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_5 + 40]
+0x1ff0	and.b32 %r20, %r19, 1
+0x1ff8	setp.eq.s32 %p21, %r20, 0
+0x2000	mul.wide.u32 %r22, %r12, 16
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2168	reconverge
+0x2170	exit
+0x1f40	ld.param.u64 %r0, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_0]
+0x1f48	ld.param.u64 %r1, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_1 + 8]
+0x1f50	ld.param.u64 %r2, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_2 + 16]
+0x1f58	ld.param.u64 %r3, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_4 + 32]
+0x1f60	cvta.to.global.u64 %r4, %r2
+0x1f68	cvta.to.global.u64 %r5, %r3
+0x1f70	cvta.to.global.u64 %r6, %r1
+0x1f78	cvta.to.global.u64 %r7, %r0
+0x1f80	ld.param.u64 %r8, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1f88	mov.u32 %r9, %ntid.x
+0x1f90	mov.u32 %r10, %ctaid.x
+0x1f98	mov.u32 %r11, %tid.x
+0x1fa0	mad.lo.s32 %r12, %r9, %r10, %r11
+0x1fa8	mul.wide.u32 %r13, %r12, 2
+0x1fb0	setp.ge.u64 %p14, %r13, %r8
+0x1fb8	@%p14 bra BB_2_13
+0x1fc0	add.s64 %r15, %r13, 2
+0x1fc8	ld.param.u64 %r16, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1fd0	min.u64 %r17, %r16, %r15
+0x1fd8	setp.ge.u64 %p18, %r13, %r17
+0x1fe0	@%p18 bra BB_2_13
+0x1fe8	ld.param.u32 %r19, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_5 + 40]
+0x1ff0	and.b32 %r20, %r19, 1
+0x1ff8	setp.eq.s32 %p21, %r20, 0
+0x2000	mul.wide.u32 %r22, %r12, 16
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2040	ld.param.u64 %r28, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 56]
+0x2048	cvta.to.global.u64 %r29, %r28
+0x2050	ld.param.u64 %r30, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_3 + 24]
+0x2058	cvta.to.global.u64 %r31, %r30
+0x2060	add.s64 %r32, %r31, %r22
+0x2068	add.s64 %r33, %r29, %r22
+0x2070	ld.global.u64 %r34, [%r32]
+0x2078	shl.b64 %r35, %r34, 3
+0x2080	add.s64 %r36, %r7, %r35
+0x2088	ld.global.u64 %r37, [%r33]
+0x2090	shl.b64 %r38, %r37, 3
+0x2098	add.s64 %r39, %r7, %r38
+0x20a0	ld.global.u64 %r40, [%r39]
+0x20a8	ld.global.u64 %r41, [%r36]
+0x20b0	setp.eq.s64 %p42, %r41, %r40
+0x20b8	@%p42 bra BB_2_11
+0x20c0	min.u64 %r43, %r40, %r41
+0x20c8	max.u64 %r44, %r41, %r40
+0x20d0	@%p21 bra BB_2_9
+0x20f8	shl.b64 %r47, %r43, 3
+0x2100	add.s64 %r48, %r6, %r47
+0x2108	st.global.u64 [%r48], %r44
+0x2110	reconverge
+0x2118	mov.u16 %r49, 0
+0x2120	st.global.u8 [%r5], %r49
+0x2128	bra.uni BB_2_12
+0x2140	reconverge
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2040	ld.param.u64 %r28, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 56]
+0x2048	cvta.to.global.u64 %r29, %r28
+0x2050	ld.param.u64 %r30, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_3 + 24]
+0x2058	cvta.to.global.u64 %r31, %r30
+0x2060	add.s64 %r32, %r31, %r22
+0x2068	add.s64 %r33, %r29, %r22
+0x2070	ld.global.u64 %r34, [%r32]
+0x2078	shl.b64 %r35, %r34, 3
+0x2080	add.s64 %r36, %r7, %r35
+0x2088	ld.global.u64 %r37, [%r33]
+0x2090	shl.b64 %r38, %r37, 3
+0x2098	add.s64 %r39, %r7, %r38
+0x20a0	ld.global.u64 %r40, [%r39]
+0x20a8	ld.global.u64 %r41, [%r36]
+0x20b0	setp.eq.s64 %p42, %r41, %r40
+0x20b8	@%p42 bra BB_2_11
+0x20c0	min.u64 %r43, %r40, %r41
+0x20c8	max.u64 %r44, %r41, %r40
+0x20d0	@%p21 bra BB_2_9
+0x20f8	shl.b64 %r47, %r43, 3
+0x2100	add.s64 %r48, %r6, %r47
+0x2108	st.global.u64 [%r48], %r44
+0x2110	reconverge
+0x2118	mov.u16 %r49, 0
+0x2120	st.global.u8 [%r5], %r49
+0x2128	bra.uni BB_2_12
+0x2140	reconverge
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2168	reconverge
+0x2170	exit
+0x1f40	ld.param.u64 %r0, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_0]
+0x1f48	ld.param.u64 %r1, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_1 + 8]
+0x1f50	ld.param.u64 %r2, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_2 + 16]
+0x1f58	ld.param.u64 %r3, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_4 + 32]
+0x1f60	cvta.to.global.u64 %r4, %r2
+0x1f68	cvta.to.global.u64 %r5, %r3
+0x1f70	cvta.to.global.u64 %r6, %r1
+0x1f78	cvta.to.global.u64 %r7, %r0
+0x1f80	ld.param.u64 %r8, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1f88	mov.u32 %r9, %ntid.x
+0x1f90	mov.u32 %r10, %ctaid.x
+0x1f98	mov.u32 %r11, %tid.x
+0x1fa0	mad.lo.s32 %r12, %r9, %r10, %r11
+0x1fa8	mul.wide.u32 %r13, %r12, 2
+0x1fb0	setp.ge.u64 %p14, %r13, %r8
+0x1fb8	@%p14 bra BB_2_13
+0x1fc0	add.s64 %r15, %r13, 2
+0x1fc8	ld.param.u64 %r16, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1fd0	min.u64 %r17, %r16, %r15
+0x1fd8	setp.ge.u64 %p18, %r13, %r17
+0x1fe0	@%p18 bra BB_2_13
+0x1fe8	ld.param.u32 %r19, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_5 + 40]
+0x1ff0	and.b32 %r20, %r19, 1
+0x1ff8	setp.eq.s32 %p21, %r20, 0
+0x2000	mul.wide.u32 %r22, %r12, 16
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2040	ld.param.u64 %r28, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 56]
+0x2048	cvta.to.global.u64 %r29, %r28
+0x2050	ld.param.u64 %r30, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_3 + 24]
+0x2058	cvta.to.global.u64 %r31, %r30
+0x2060	add.s64 %r32, %r31, %r22
+0x2068	add.s64 %r33, %r29, %r22
+0x2070	ld.global.u64 %r34, [%r32]
+0x2078	shl.b64 %r35, %r34, 3
+0x2080	add.s64 %r36, %r7, %r35
+0x2088	ld.global.u64 %r37, [%r33]
+0x2090	shl.b64 %r38, %r37, 3
+0x2098	add.s64 %r39, %r7, %r38
+0x20a0	ld.global.u64 %r40, [%r39]
+0x20a8	ld.global.u64 %r41, [%r36]
+0x20b0	setp.eq.s64 %p42, %r41, %r40
+0x20b8	@%p42 bra BB_2_11
+0x20c0	min.u64 %r43, %r40, %r41
+0x20c8	max.u64 %r44, %r41, %r40
+0x20d0	@%p21 bra BB_2_9
+0x20f8	shl.b64 %r47, %r43, 3
+0x2100	add.s64 %r48, %r6, %r47
+0x2108	st.global.u64 [%r48], %r44
+0x2110	reconverge
+0x2118	mov.u16 %r49, 0
+0x2120	st.global.u8 [%r5], %r49
+0x2128	bra.uni BB_2_12
+0x2140	reconverge
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2040	ld.param.u64 %r28, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 56]
+0x2048	cvta.to.global.u64 %r29, %r28
+0x2050	ld.param.u64 %r30, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_3 + 24]
+0x2058	cvta.to.global.u64 %r31, %r30
+0x2060	add.s64 %r32, %r31, %r22
+0x2068	add.s64 %r33, %r29, %r22
+0x2070	ld.global.u64 %r34, [%r32]
+0x2078	shl.b64 %r35, %r34, 3
+0x2080	add.s64 %r36, %r7, %r35
+0x2088	ld.global.u64 %r37, [%r33]
+0x2090	shl.b64 %r38, %r37, 3
+0x2098	add.s64 %r39, %r7, %r38
+0x20a0	ld.global.u64 %r40, [%r39]
+0x20a8	ld.global.u64 %r41, [%r36]
+0x20b0	setp.eq.s64 %p42, %r41, %r40
+0x20b8	@%p42 bra BB_2_11
+0x20c0	min.u64 %r43, %r40, %r41
+0x20c8	max.u64 %r44, %r41, %r40
+0x20d0	@%p21 bra BB_2_9
+0x20f8	shl.b64 %r47, %r43, 3
+0x2100	add.s64 %r48, %r6, %r47
+0x2108	st.global.u64 [%r48], %r44
+0x2110	reconverge
+0x2118	mov.u16 %r49, 0
+0x2120	st.global.u8 [%r5], %r49
+0x2128	bra.uni BB_2_12
+0x2140	reconverge
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2168	reconverge
+0x2170	exit
+0x1f40	ld.param.u64 %r0, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_0]
+0x1f48	ld.param.u64 %r1, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_1 + 8]
+0x1f50	ld.param.u64 %r2, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_2 + 16]
+0x1f58	ld.param.u64 %r3, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_4 + 32]
+0x1f60	cvta.to.global.u64 %r4, %r2
+0x1f68	cvta.to.global.u64 %r5, %r3
+0x1f70	cvta.to.global.u64 %r6, %r1
+0x1f78	cvta.to.global.u64 %r7, %r0
+0x1f80	ld.param.u64 %r8, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1f88	mov.u32 %r9, %ntid.x
+0x1f90	mov.u32 %r10, %ctaid.x
+0x1f98	mov.u32 %r11, %tid.x
+0x1fa0	mad.lo.s32 %r12, %r9, %r10, %r11
+0x1fa8	mul.wide.u32 %r13, %r12, 2
+0x1fb0	setp.ge.u64 %p14, %r13, %r8
+0x1fb8	@%p14 bra BB_2_13
+0x1fc0	add.s64 %r15, %r13, 2
+0x1fc8	ld.param.u64 %r16, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 72]
+0x1fd0	min.u64 %r17, %r16, %r15
+0x1fd8	setp.ge.u64 %p18, %r13, %r17
+0x1fe0	@%p18 bra BB_2_13
+0x1fe8	ld.param.u32 %r19, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_5 + 40]
+0x1ff0	and.b32 %r20, %r19, 1
+0x1ff8	setp.eq.s32 %p21, %r20, 0
+0x2000	mul.wide.u32 %r22, %r12, 16
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2040	ld.param.u64 %r28, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 56]
+0x2048	cvta.to.global.u64 %r29, %r28
+0x2050	ld.param.u64 %r30, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_3 + 24]
+0x2058	cvta.to.global.u64 %r31, %r30
+0x2060	add.s64 %r32, %r31, %r22
+0x2068	add.s64 %r33, %r29, %r22
+0x2070	ld.global.u64 %r34, [%r32]
+0x2078	shl.b64 %r35, %r34, 3
+0x2080	add.s64 %r36, %r7, %r35
+0x2088	ld.global.u64 %r37, [%r33]
+0x2090	shl.b64 %r38, %r37, 3
+0x2098	add.s64 %r39, %r7, %r38
+0x20a0	ld.global.u64 %r40, [%r39]
+0x20a8	ld.global.u64 %r41, [%r36]
+0x20b0	setp.eq.s64 %p42, %r41, %r40
+0x20b8	@%p42 bra BB_2_11
+0x20c0	min.u64 %r43, %r40, %r41
+0x20c8	max.u64 %r44, %r41, %r40
+0x20d0	@%p21 bra BB_2_9
+0x20f8	shl.b64 %r47, %r43, 3
+0x2100	add.s64 %r48, %r6, %r47
+0x2108	st.global.u64 [%r48], %r44
+0x2110	reconverge
+0x2118	mov.u16 %r49, 0
+0x2120	st.global.u8 [%r5], %r49
+0x2128	bra.uni BB_2_12
+0x2140	reconverge
+0x2130	mov.u16 %r50, 1
+0x2138	st.global.u8 [%r23], %r50
+0x2140	reconverge
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2008	add.s64 %r23, %r4, %r13
+0x2010	ld.global.u8 %r24, [%r23]
+0x2018	cvt.s16.s8 %r25, %r24
+0x2020	mov.b16 %r26, 0
+0x2028	cvt.s16.s8 %r26, %r26
+0x2030	setp.ne.s16 %p27, %r25, %r26
+0x2038	@%p27 bra BB_2_12
+0x2040	ld.param.u64 %r28, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_6 + 56]
+0x2048	cvta.to.global.u64 %r29, %r28
+0x2050	ld.param.u64 %r30, [_Z14kernel_hookingPmS_PbS_S0_j9cudaGraph_param_3 + 24]
+0x2058	cvta.to.global.u64 %r31, %r30
+0x2060	add.s64 %r32, %r31, %r22
+0x2068	add.s64 %r33, %r29, %r22
+0x2070	ld.global.u64 %r34, [%r32]
+0x2078	shl.b64 %r35, %r34, 3
+0x2080	add.s64 %r36, %r7, %r35
+0x2088	ld.global.u64 %r37, [%r33]
+0x2090	shl.b64 %r38, %r37, 3
+0x2098	add.s64 %r39, %r7, %r38
+0x20a0	ld.global.u64 %r40, [%r39]
+0x20a8	ld.global.u64 %r41, [%r36]
+0x20b0	setp.eq.s64 %p42, %r41, %r40
+0x20b8	@%p42 bra BB_2_11
+0x20c0	min.u64 %r43, %r40, %r41
+0x20c8	max.u64 %r44, %r41, %r40
+0x20d0	@%p21 bra BB_2_9
+0x20f8	shl.b64 %r47, %r43, 3
+0x2100	add.s64 %r48, %r6, %r47
+0x2108	st.global.u64 [%r48], %r44
+0x2110	reconverge
+0x2118	mov.u16 %r49, 0
+0x2120	st.global.u8 [%r5], %r49
+0x2128	bra.uni BB_2_12
+0x2140	reconverge
+0x2130	mov.u16 %r50, 1
+0x2138	st.global.u8 [%r23], %r50
+0x2140	reconverge
+0x2140	reconverge
+0x2148	add.s64 %r13, %r13, 1
+0x2150	add.s64 %r22, %r22, 8
+0x2158	setp.lt.u64 %p51, %r13, %r17
+0x2160	@%p51 bra BB_2_5
+0x2168	reconverge
+0x2168	reconverge
+0x2170	exit

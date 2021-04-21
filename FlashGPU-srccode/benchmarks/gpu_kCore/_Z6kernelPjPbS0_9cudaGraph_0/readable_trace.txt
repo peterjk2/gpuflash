@@ -1,0 +1,27 @@
+0x1f40	ld.param.u64 %r0, [_Z6kernelPjPbS0_9cudaGraph_param_0]
+0x1f48	ld.param.u64 %r1, [_Z6kernelPjPbS0_9cudaGraph_param_1 + 8]
+0x1f50	ld.param.u64 %r2, [_Z6kernelPjPbS0_9cudaGraph_param_2 + 16]
+0x1f58	cvta.to.global.u64 %r3, %r2
+0x1f60	cvta.to.global.u64 %r4, %r0
+0x1f68	cvta.to.global.u64 %r5, %r1
+0x1f70	ld.param.u64 %r6, [_Z6kernelPjPbS0_9cudaGraph_param_3 + 40]
+0x1f78	ld.param.u64 %r7, [_Z6kernelPjPbS0_9cudaGraph_param_3 + 32]
+0x1f80	ld.param.u64 %r8, [_Z6kernelPjPbS0_9cudaGraph_param_3 + 24]
+0x1f88	cvta.to.global.u64 %r9, %r8
+0x1f90	cvta.to.global.u64 %r10, %r7
+0x1f98	mov.u32 %r11, %ntid.x
+0x1fa0	mov.u32 %r12, %ctaid.x
+0x1fa8	mov.u32 %r13, %tid.x
+0x1fb0	mad.lo.s32 %r14, %r11, %r12, %r13
+0x1fb8	cvt.u64.u32 %r15, %r14
+0x1fc0	setp.ge.u64 %p16, %r15, %r6
+0x1fc8	@%p16 bra BB_2_10
+0x1fd0	add.s64 %r17, %r3, %r15
+0x1fd8	ld.global.u8 %r18, [%r17]
+0x1fe0	cvt.s16.s8 %r19, %r18
+0x1fe8	mov.b16 %r20, 0
+0x1ff0	cvt.s16.s8 %r20, %r20
+0x1ff8	setp.eq.s16 %p21, %r19, %r20
+0x2000	@%p21 bra BB_2_10
+0x20e0	reconverge
+0x20e8	exit

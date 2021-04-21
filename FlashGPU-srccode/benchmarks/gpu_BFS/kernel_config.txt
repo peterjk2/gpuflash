@@ -1,0 +1,9 @@
+newptx
+14
+-1
+/home/pj/Desktop/macsim/benchmarks/gpu_BFS/_Z10initializePjm_0/Trace.txt
+/home/pj/Desktop/macsim/benchmarks/gpu_BFS/_Z6kernelPj9cudaGraph11my_worklistS1__0/Trace.txt
+/home/pj/Desktop/macsim/benchmarks/gpu_BFS/_Z6kernelPj9cudaGraph11my_worklistS1__1/Trace.txt
+/home/pj/Desktop/macsim/benchmarks/gpu_BFS/_Z6kernelPj9cudaGraph11my_worklistS1__2/Trace.txt
+/home/pj/Desktop/macsim/benchmarks/gpu_BFS/_Z6kernelPj9cudaGraph11my_worklistS1__3/Trace.txt
+/home/pj/Desktop/macsim/benchmarks/gpu_BFS/_Z6kernelPj9cudaGraph11my_worklistS1__4/Trace.txt

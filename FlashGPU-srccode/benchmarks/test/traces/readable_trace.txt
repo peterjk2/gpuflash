@@ -1,0 +1,1213 @@
+0x1f40	ld.param.u64 %r0, [_Z10vector_addPfS_S_i_param_0]
+0x1f48	ld.param.u64 %r1, [_Z10vector_addPfS_S_i_param_1 + 8]
+0x1f50	ld.param.u64 %r2, [_Z10vector_addPfS_S_i_param_2 + 16]
+0x1f58	ld.param.u32 %r3, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1f60	cvta.to.global.u64 %r4, %r0
+0x1f68	cvta.to.global.u64 %r5, %r2
+0x1f70	cvta.to.global.u64 %r6, %r1
+0x1f78	setp.lt.s32 %p7, %r3, 1
+0x1f80	@%p7 bra BB_1_5
+0x1f88	mov.u32 %r8, 0
+0x1f90	mov.u64 %r9, 0
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1f98	add.s64 %r10, %r6, %r9
+0x1fa0	add.s64 %r11, %r5, %r9
+0x1fa8	ld.global.f32 %r12, [%r11]
+0x1fb0	ld.global.f32 %r13, [%r10]
+0x1fb8	add.f32 %r14, %r13, %r12
+0x1fc0	add.s64 %r15, %r4, %r9
+0x1fc8	st.global.f32 [%r15], %r14
+0x1fd0	add.s64 %r9, %r9, 4
+0x1fd8	add.s32 %r8, %r8, 1
+0x1fe0	ld.param.u32 %r16, [_Z10vector_addPfS_S_i_param_3 + 24]
+0x1fe8	setp.lt.s32 %p17, %r8, %r16
+0x1ff0	@%p17 bra BB_1_4
+0x1ff8	reconverge
+0x2000	exit
