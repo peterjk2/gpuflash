@@ -31,8 +31,8 @@ FlashGPU-srccode/bin/params.in
 ```
 trace_file_list:
 ```
-First line: # of traces to execute
-Following lines: Full path to kernel_config.txt (/path/to/your/traces/gpu_BFS/kernel_config.txt)
+First line: # of traces and following lines in file
+Following lines: /path/to/your/traces/benchmark_name/kernel_config.txt
 ```
 kernel_config.txt (in trace folder):
 ```
@@ -44,7 +44,8 @@ Following lines: Full path to each Trace.txt file (THESE WILL ALL HAVE TO CHANGE
 ## Execution
 ```
 cd bin/
-./macsim 
+./macsim
+Result in result_ssd_cycle/
 ```
 ## Credits
 FlashGPU: https://github.com/FlashGPU/FlashGPU-srccode
