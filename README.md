@@ -32,14 +32,14 @@ FlashGPU-srccode/bin/params.in
 trace_file_list:
 ```
 First line: # of traces to execute
-Following lines: Full path to kernel_config.txt
+Following lines: Full path to kernel_config.txt (/path/to/your/traces/gpu_BFS/kernel_config.txt)
 ```
 kernel_config.txt (in trace folder):
 ```
 newptx
 14
 -1
-Following lines: Full paths to each Trace.txt file (THIS WILL HAVE TO CHANGE FOR EACH MACHINE)
+Following lines: Full path to each Trace.txt file (THESE WILL ALL HAVE TO CHANGE FOR EACH MACHINE)
 ```
 ## Execution
 ```
