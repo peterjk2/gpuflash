@@ -1,0 +1,282 @@
+/*
+* Ocelot Version : 2.1.0
+*/
+
+.version 3.0
+.target sm_20
+.address_size 64
+/* Module bfs_data_thread_centric.cu */
+
+/* Function prototypes */
+.visible .func _ZN11my_worklist9pushRangeEPmj (.param  .b64 _ZN11my_worklist9pushRangeEPmj_param_0, .param  .b64 _ZN11my_worklist9pushRangeEPmj_param_1, .param  .b32 _ZN11my_worklist9pushRangeEPmj_param_2);
+.entry _Z6kernelPj9cudaGraph11my_worklistS1_ (.param  .u64 _Z6kernelPj9cudaGraph11my_worklistS1__param_0, .param  .align 8 .b8 _Z6kernelPj9cudaGraph11my_worklistS1__param_1[32], .param  .align 8 .b8 _Z6kernelPj9cudaGraph11my_worklistS1__param_2[16], .param  .align 8 .b8 _Z6kernelPj9cudaGraph11my_worklistS1__param_3[16]);
+.entry _Z10initializePjm (.param  .u64 _Z10initializePjm_param_0, .param  .u64 _Z10initializePjm_param_1);
+
+/* Globals */
+
+/* Textures */
+
+/* Kernels */
+.visible .func _ZN11my_worklist9pushRangeEPmj(.param  .b64 _ZN11my_worklist9pushRangeEPmj_param_0,
+		.param  .b64 _ZN11my_worklist9pushRangeEPmj_param_1,
+		.param  .b32 _ZN11my_worklist9pushRangeEPmj_param_2)
+{
+
+	.reg .s64 %r0;
+	.reg .s32 %r1;
+	.reg .s64 %r2;
+	.reg .s32 %r3;
+	.reg .pred %p4;
+	.reg .s32 %r5;
+	.reg .s64 %r6;
+	.reg .s64 %r7;
+	.reg .s64 %r8;
+	.reg .s64 %r9;
+	.reg .s64 %r10;
+	.reg .s64 %r11;
+	.reg .s32 %r12;
+	.reg .pred %p13;
+	BB_3_0:
+	BB_3_2:
+		ld.param.u64 %r0, [_ZN11my_worklist9pushRangeEPmj_param_0]; 
+		ld.param.u32 %r1, [_ZN11my_worklist9pushRangeEPmj_param_2]; 
+		ld.u64 %r2, [%r0 + 8]; 
+		atom.global.add.u32 %r3, [%r2], %r1; 
+		setp.eq.s32 %p4, %r1, 0; 
+		@%p4 bra BB_3_5; 
+	BB_3_3:
+		mov.u32 %r5, 0; 
+		ld.param.u64 %r6, [_ZN11my_worklist9pushRangeEPmj_param_1]; 
+	BB_3_4:
+		ld.param.u64 %r7, [_ZN11my_worklist9pushRangeEPmj_param_0]; 
+		ld.u64 %r8, [%r7]; 
+		mul.wide.u32 %r9, %r3, 8; 
+		add.s64 %r10, %r8, %r9; 
+		ld.u64 %r11, [%r6]; 
+		st.u64 [%r10], %r11; 
+		add.s64 %r6, %r6, 8; 
+		add.s32 %r3, %r3, 1; 
+		add.s32 %r5, %r5, 1; 
+		ld.param.u32 %r12, [_ZN11my_worklist9pushRangeEPmj_param_2]; 
+		setp.lt.u32 %p13, %r5, %r12; 
+		@%p13 bra BB_3_4; 
+	BB_3_5:
+		ret; 
+	BB_3_1:
+}
+.entry _Z6kernelPj9cudaGraph11my_worklistS1_(.param  .u64 _Z6kernelPj9cudaGraph11my_worklistS1__param_0,
+		.param  .align 8 .b8 _Z6kernelPj9cudaGraph11my_worklistS1__param_1[32],
+		.param  .align 8 .b8 _Z6kernelPj9cudaGraph11my_worklistS1__param_2[16],
+		.param  .align 8 .b8 _Z6kernelPj9cudaGraph11my_worklistS1__param_3[16])
+{
+	.local .align 8 .b8 _Zcontext_4___local_depot1[1024];
+
+	.reg .b64 %r0;
+	.reg .s64 %r1;
+	.reg .s64 %r2;
+	.reg .s64 %r3;
+	.reg .s64 %r4;
+	.reg .s64 %r5;
+	.reg .s64 %r6;
+	.reg .s64 %r7;
+	.reg .s64 %r8;
+	.reg .s64 %r9;
+	.reg .s64 %r10;
+	.reg .s64 %r11;
+	.reg .s64 %r12;
+	.reg .s32 %r13;
+	.reg .s32 %r14;
+	.reg .s32 %r15;
+	.reg .s32 %r16;
+	.reg .s32 %r17;
+	.reg .pred %p18;
+	.reg .s64 %r19;
+	.reg .s64 %r20;
+	.reg .s64 %r21;
+	.reg .s64 %r22;
+	.reg .s64 %r23;
+	.reg .s64 %r24;
+	.reg .s64 %r25;
+	.reg .s32 %r26;
+	.reg .s64 %r27;
+	.reg .s64 %r28;
+	.reg .pred %p29;
+	.reg .s32 %r30;
+	.reg .s32 %r31;
+	.reg .s64 %r32;
+	.reg .s64 %r33;
+	.reg .s64 %r34;
+	.reg .s64 %r35;
+	.reg .s64 %r36;
+	.reg .s32 %r37;
+	.reg .pred %p38;
+	.reg .s64 %r39;
+	.reg .s64 %r40;
+	.reg .s64 %r41;
+	.reg .pred %p42;
+	.reg .s64 %r43;
+	.reg .s64 %r44;
+	.reg .s32 %r45;
+	.reg .s32 %r46;
+	.reg .s64 %r47;
+	.reg .s64 %r48;
+	.reg .s64 %r49;
+	.reg .pred %p50;
+	.reg .pred %p51;
+	.reg .s64 %r52;
+	.reg .s64 %r53;
+	.reg .s32 %r54;
+	.reg .pred %p55;
+	.reg .s32 %r56;
+	.reg .s64 %r57;
+	.reg .s64 %r58;
+	.reg .s64 %r59;
+	.reg .s64 %r60;
+	.reg .pred %p61;
+	BB_2_0:
+	BB_2_2:
+		mov.u64 %r0, _Zcontext_4___local_depot1; 
+		ld.param.u64 %r1, [_Z6kernelPj9cudaGraph11my_worklistS1__param_0]; 
+		cvta.to.global.u64 %r2, %r1; 
+		ld.param.u64 %r3, [_Z6kernelPj9cudaGraph11my_worklistS1__param_2 + 8]; 
+		ld.param.u64 %r4, [_Z6kernelPj9cudaGraph11my_worklistS1__param_2]; 
+		cvta.to.global.u64 %r5, %r4; 
+		cvta.to.global.u64 %r6, %r3; 
+		ld.param.u64 %r7, [_Z6kernelPj9cudaGraph11my_worklistS1__param_1 + 8]; 
+		ld.param.u64 %r8, [_Z6kernelPj9cudaGraph11my_worklistS1__param_1]; 
+		cvta.to.global.u64 %r9, %r8; 
+		cvta.to.global.u64 %r10, %r7; 
+		ld.param.u64 %r11, [_Z6kernelPj9cudaGraph11my_worklistS1__param_3]; 
+		cvta.to.global.u64 %r12, %r11; 
+		mov.u32 %r13, %ntid.x; 
+		mov.u32 %r14, %ctaid.x; 
+		mov.u32 %r15, %tid.x; 
+		mad.lo.s32 %r16, %r13, %r14, %r15; 
+		ldu.global.u32 %r17, [%r6]; 
+		setp.ge.u32 %p18, %r16, %r17; 
+		@%p18 bra BB_2_17; 
+	BB_2_3:
+		mul.wide.u32 %r19, %r16, 8; 
+		add.s64 %r20, %r5, %r19; 
+		ld.global.u64 %r21, [%r20]; 
+		shl.b64 %r22, %r21, 3; 
+		add.s64 %r23, %r9, %r22; 
+		shl.b64 %r24, %r21, 2; 
+		add.s64 %r25, %r2, %r24; 
+		ld.global.u32 %r26, [%r25]; 
+		ld.global.u64 %r27, [%r23 + 8]; 
+		ld.global.u64 %r28, [%r23]; 
+		setp.lt.u64 %p29, %r28, %r27; 
+		@%p29 bra BB_2_5; 
+	BB_2_4:
+		mov.u32 %r30, 0; 
+		bra.uni BB_2_14; 
+	BB_2_5:
+		add.s32 %r31, %r26, 1; 
+		mov.u32 %r30, 0; 
+	BB_2_6:
+		shl.b64 %r32, %r28, 3; 
+		add.s64 %r33, %r10, %r32; 
+		ld.global.u64 %r34, [%r33]; 
+		shl.b64 %r35, %r34, 2; 
+		add.s64 %r36, %r2, %r35; 
+		ld.global.u32 %r37, [%r36]; 
+		setp.eq.s32 %p38, %r37, -256; 
+		@%p38 bra BB_2_8; 
+	BB_2_7:
+		bra.uni BB_2_13; 
+	BB_2_8:
+		st.global.u32 [%r36], %r31; 
+		mul.wide.u32 %r39, %r30, 8; 
+		add.u64 %r40, %r0, 0; 
+		add.s64 %r41, %r40, %r39; 
+		st.local.u64 [%r41], %r34; 
+		add.s32 %r30, %r30, 1; 
+		setp.eq.s32 %p42, %r30, 128; 
+		@%p42 bra BB_2_10; 
+	BB_2_9:
+		bra.uni BB_2_13; 
+	BB_2_10:
+		ld.param.u64 %r43, [_Z6kernelPj9cudaGraph11my_worklistS1__param_3 + 8]; 
+		cvta.to.global.u64 %r44, %r43; 
+		atom.global.add.u32 %r45, [%r44], %r30; 
+		mov.u32 %r46, 0; 
+	BB_2_11:
+		mul.wide.u32 %r47, %r45, 8; 
+		add.s64 %r48, %r12, %r47; 
+		ld.local.u64 %r49, [%r40]; 
+		st.global.u64 [%r48], %r49; 
+		add.s64 %r40, %r40, 8; 
+		add.s32 %r45, %r45, 1; 
+		add.s32 %r46, %r46, 1; 
+		setp.lt.u32 %p50, %r46, %r30; 
+		@%p50 bra BB_2_11; 
+	BB_2_12:
+		mov.u32 %r30, 0; 
+	BB_2_13:
+		add.s64 %r28, %r28, 1; 
+		setp.lt.u64 %p51, %r28, %r27; 
+		@%p51 bra BB_2_6; 
+	BB_2_14:
+		ld.param.u64 %r52, [_Z6kernelPj9cudaGraph11my_worklistS1__param_3 + 8]; 
+		cvta.to.global.u64 %r53, %r52; 
+		atom.global.add.u32 %r54, [%r53], %r30; 
+		setp.eq.s32 %p55, %r30, 0; 
+		@%p55 bra BB_2_17; 
+	BB_2_15:
+		mov.u32 %r56, 0; 
+		add.u64 %r57, %r0, 0; 
+	BB_2_16:
+		mul.wide.u32 %r58, %r54, 8; 
+		add.s64 %r59, %r12, %r58; 
+		ld.local.u64 %r60, [%r57]; 
+		st.global.u64 [%r59], %r60; 
+		add.s64 %r57, %r57, 8; 
+		add.s32 %r54, %r54, 1; 
+		add.s32 %r56, %r56, 1; 
+		setp.lt.u32 %p61, %r56, %r30; 
+		@%p61 bra BB_2_16; 
+	BB_2_17:
+		exit; 
+	BB_2_1:
+}
+.entry _Z10initializePjm(.param  .u64 _Z10initializePjm_param_0,
+		.param  .u64 _Z10initializePjm_param_1)
+{
+
+	.reg .s64 %r0;
+	.reg .s64 %r1;
+	.reg .s64 %r2;
+	.reg .s32 %r3;
+	.reg .s32 %r4;
+	.reg .s32 %r5;
+	.reg .s32 %r6;
+	.reg .s64 %r7;
+	.reg .pred %p8;
+	.reg .s64 %r9;
+	.reg .s64 %r10;
+	.reg .s32 %r11;
+	BB_1_0:
+	BB_1_2:
+		ld.param.u64 %r0, [_Z10initializePjm_param_0]; 
+		ld.param.u64 %r1, [_Z10initializePjm_param_1]; 
+		cvta.to.global.u64 %r2, %r0; 
+		mov.u32 %r3, %ntid.x; 
+		mov.u32 %r4, %ctaid.x; 
+		mov.u32 %r5, %tid.x; 
+		mad.lo.s32 %r6, %r3, %r4, %r5; 
+		cvt.u64.u32 %r7, %r6; 
+		setp.lt.u64 %p8, %r7, %r1; 
+		@%p8 bra BB_1_4; 
+	BB_1_6:
+		exit; 
+	BB_1_1:
+	BB_1_4:
+		shl.b64 %r9, %r7, 2; 
+		add.s64 %r10, %r2, %r9; 
+		mov.u32 %r11, -256; 
+		st.global.u32 [%r10], %r11; 
+		bra.uni BB_1_6; 
+}
+
+
