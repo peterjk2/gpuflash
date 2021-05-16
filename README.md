@@ -12,7 +12,7 @@ SCons
 ```
 Build:
 ```
-cd FlashGPU
+cd FlashGPU-srccode
 ./build.py --simplessd -j8
 ```
 ## SSD parameters
