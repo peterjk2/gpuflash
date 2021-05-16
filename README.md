@@ -1,4 +1,9 @@
 # GPUFlash
+ECE598MS Project
+
+Peter Kircher, Yuqi Xue
+
+{peterjk2, yuqixue2}@illinois.edu
 ## Install
 Requirements:
 ```
